@@ -9,9 +9,7 @@ prompt.get(["age"],function(err,result){
         {console.log('Введено від\'ємне число')}
     else if (isNaN(result.age))
         {{console.log('Невірний формат данних')}}
-    else{console.log(result.age+' '+'років')
-    
-            
+    else{console.log(result.age+' '+'років');
         }
     }
 )
