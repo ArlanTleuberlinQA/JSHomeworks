@@ -45,35 +45,33 @@ const company = {
   
   function findValueByKey(companyName) {
     function search(company) {
-        
-        if (company.name === companyName) {
-          return company
-        }
-        
-      
+      if (company.name === companyName) {
+        const filteredCompany = {uses: company.uses, sells:company.sells};
+        return filteredCompany;
+      }
   
       if (company.clients && Array.isArray(company.clients)) {
         for (let client of company.clients) {
-          let  result = search(client);
+          const result = search(client);
           if (result) {
             return result;
           }
         }
       }
   
-      if (company.partners && Array.isArray(company.partners)) {
+      else if (company.partners && Array.isArray(company.partners)) {
         for (let partner of company.partners) {
-          let result = search(partner);
+          const result = search(partner);
           if (result) {
             return result;
           }
         }
       }
-  
-     return null;
+      
+      return null;
     }
   
     return search(company);
   }
   
-  console.log(findValueByKey('Клієнт 1'));
+  console.log(findValueByKey('Клієнт 1.2'));
