@@ -1,0 +1,11 @@
+name,lastName,email,password1,repeatPassword,URL
+John,Dou,test@test.com,Qwerty12345,Qwerty12345,https://qauto.forstudy.space/api
+{{$randomFirstName}},,{{uniqueEmail}},{{password}},{{password}},https://qauto.forstudy.space/api
+{{$randomFirstName}},{{$randomLastName}},{{uniqueEmail}},{{password}},RIver4589,https://qauto.forstudy.space/api
+{{$randomFirstName}},{{$randomLastName}},{{uniqueEmail}},Aa1,Aa1,https://qauto.forstudy.space/api
+{{$randomFirstName}},{{$randomLastName}},{{uniqueEmail}},{{password}},{{password}},https://qauto.forstudy.space/api
+John,Dou,test@test.com,Qwerty12345,Qwerty12345,https://qauto2.forstudy.space/api
+{{$randomFirstName}},,{{uniqueEmail}},{{password}},{{password}},https://qauto2.forstudy.space/api
+{{$randomFirstName}},{{$randomLastName}},{{uniqueEmail}},{{password}},RIver4589,https://qauto2.forstudy.space/api
+{{$randomFirstName}},{{$randomLastName}},{{uniqueEmail}},Aa1,Aa1,https://qauto2.forstudy.space/api
+{{$randomFirstName}},{{$randomLastName}},{{uniqueEmail}},{{password}},{{password}},https://qauto2.forstudy.space/api
